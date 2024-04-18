@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div class="w3-center w3-padding-16" id="title">My Food</div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+  body, h1, h2, h4, h5, h6 {font-family: "Karma", sans-serif;background-color:rgba(238, 222, 218, 0.858);-webkit-text-fill-color: #370200;}
+  .w3-bar-block .w3-bar-item {padding:10px; color:rgb(234, 113, 113);}
+  h3 {font-family: "Karma";-webkit-text-fill-color: #a00000;font-weight: bold;}
+  .w3-center#title {color: #000;}
+</style>
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="Sidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#recipes" onclick="showSection('recipes')" class="w3-bar-item w3-button">Recipes</a>
+  <a href="#about" onclick="showSection('about')" class="w3-bar-item w3-button">About</a>
+  <a href="#step1" onclick="showSection('step1')" class="w3-bar-item w3-button">Start</a>
+</nav>
+
+<!-- top menu --> 
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+  
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- recipes  -->
+  <div id="recipes">
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img src="salad.gif" alt="a" style="width:100%">
+        <h3>Salad (easy)</h3>
+        <p>A refreshing plate of crisp greens, vegetables, toppings, and dressing.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="smoothie.gif" alt="b" style="width:100%">
+        <h3>Smoothie (easy)</h3>
+        <p>A flavorful and nutritious blended mix of fruits, vegetables, and milk.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="omlette.gif" alt="c" style="width:100%">
+        <h3>Omlette (easy)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="spaghetti.gif" alt="d" style="width:100%">
+        <h3>Spaghetti (medium)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="cremebrulee.gif" alt="e" style="width:100%">
+        <h3>Crème Brûlée (medium)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="soup.gif" alt="f" style="width:100%">
+        <h3>Soup (medium)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="pizza.gif" alt="g" style="width:100%">
+        <h3>Pepperoni Pizza (hard)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="beefwellington.gif" alt="h" style="width:100%">
+        <h3>Beef Wellington (hard)</h3>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" style="display:none;">
+    <div class="w3-container w3-padding-32 w3-center">  
+      <img src="logo.gif" alt="logo" class="w3-image" style="display:block;margin:auto" width="533" height="533">
+      <h3>About us</h3><br>
+      <div class="w3-padding-32">
+        <h3>Who are we?</h3>
+        <p>Healthy cooking blah blah blah
+        preventing kitchen fires everyday</p>
+      </div>
+    </div>
+  </div>
+
+<div id="step1" style="display:none;">
+  
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Step 1</h3><br>
+    <div class="w3-padding-32">
+      <p>Type in the ingredients you have in your kitchen right now!</p><br />
+        <input type="text" id="Name" name="Name" size="40"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function w3_open() {
+    document.getElementById("Sidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("Sidebar").style.display = "none";
+  }
+
+
+  function showSection(sectionId) {
+    var sections = document.querySelectorAll('.w3-main > div');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
+    }
+    document.getElementById(sectionId).style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
+
