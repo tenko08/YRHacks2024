@@ -19,7 +19,7 @@ function fetchRecipes(userIngredients) {
             output += recipe.name + "<br>";
           } else {
             const presentIngredients = userIngredients.filter(userIngredient => recipe.ingredients.some(recipeIngredient => recipeIngredient.toLowerCase().includes(userIngredient.toLowerCase())));
-            output += `You have <b> ${presentIngredients.join(", ")} </b> but you are missing <b> ${missingIngredients.join(", ").toLowerCase()} </b> to cook ${recipe.name.toLowerCase()}. <br>`;
+            output += `To cook ${recipe.name.toLowerCase()}, you have <b> ${presentIngredients.join(", ")} </b> but you are missing <b> ${missingIngredients.join(", ").toLowerCase()} </b>. <br>`;
           }
         });
       } else {
@@ -33,12 +33,12 @@ function fetchRecipes(userIngredients) {
 }
 
 // Function to prompt user for ingredients and find recipes
-function getUserInputAndFindRecipes() {
-  const userInput = prompt("Enter ingredients separated by commas:");
-  const userIngredients = userInput.split(",").map(ingredient => ingredient.trim());
+function getUserInput() {
+  let userIngredients = document.getElementById("userInput").value.split(",").map(ingredient => ingredient.trim());
+//  const userIngredients = userInput.split(",").map(ingredient => ingredient.trim());
 
   fetchRecipes(userIngredients);
 }
 
 // Call the function to start the program
-getUserInputAndFindRecipes();
+getUserInput();
