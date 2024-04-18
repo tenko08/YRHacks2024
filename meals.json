@@ -1,6 +1,7 @@
 [
     {
         "name": "Omelette",
+        "code": "omelette",
         "ingredients": [
             "3 Whole Eggs",
             "1 Tbsp Butter",
@@ -18,6 +19,7 @@
     },
     {
         "name": "Banana Smoothie",
+        "code": "banana-smoothie",
         "ingredients": [
             "1 Whole Banana",
             "2 Cups Milk",
@@ -37,6 +39,7 @@
     },
     {
         "name": "Caesar Salad",
+        "code": "caesar-salad",
         "ingredients": [
             "1 Head Lettuce",
             "10 Grams Crouton",
@@ -60,6 +63,7 @@
     },
     {
         "name": "Spaghetti and Meatballs",
+        "code" : "spaghetti-and-meatballs",
         "ingredients": [
             "1 Serving Noodle",
             "30 Grams Sauce", 
@@ -68,6 +72,7 @@
     },
     {
         "name": "Pepperoni Pizza",
+        "code": "pepperoni-pizza",
         "ingredients": [
             "2 Cup Flour", 
             "1 Cup Water", 
@@ -78,6 +83,7 @@
     },
     {
       "name": "Creme Brulee",
+      "code": "creme-brulee",
       "ingredients":[
         "2 cups Cream",
         "1/2 cup Sugar",
@@ -99,7 +105,8 @@
     },
 
     {
-      "name": "Asian  Stirfry",
+      "name": "Asian Stirfry",
+      "code": "asian-stirfry",
       "ingredients": [
         "1 lb Beef",
         "2 tsp Oil",
