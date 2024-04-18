@@ -1,7 +1,10 @@
 [
     {
         "name": "Omelette",
-        "ingredients": "3 Whole Egg, 1 Tbsp Butter",
+        "ingredients": [
+            "3 Whole Egg",
+            "1 Tbsp Butter"
+        ],
         "instructions": [
             "Crack the eggs into a bowl",
             "Whisk the eggs",
@@ -12,29 +15,56 @@
     },
     {
         "name": "Peanut Butter and Jelly Sandwich",
-        "ingredients": "2 Pieces Bread, 2 Tbsp PeanutButter, 2 Tbsp StrawberryJam"
+        "ingredients": [
+            "2 Pieces Bread",
+            "2 Tbsp PeanutButter",
+            "2 Tbsp StrawberryJam"
+        ]
     },
     {
         "name": "Banana Smoothie",
-        "ingredients": "1 Whole Banana, 2 Cups Milk, 1 Tbsp Honey",
+        "ingredients": [
+            "1 Whole Banana",
+            "2 Cups Milk",
+            "1 Tbsp Honey"
+        ],
         "instructions": [
             "cry"
         ]
     },
     {
         "name": "Caesar Salad",
-        "ingredients": "1 Head Lettuce, 10 Grams Crouton, 2 Grams Cheese, 2 Tbsp SaladDressing"
+        "ingredients": [
+            "1 Head Lettuce",
+            "10 Grams Crouton",
+            "2 Grams Cheese",
+            "2 Tbsp SaladDressing"]
     },
     {
         "name": "Spaghetti and Meatballs",
-        "ingredients": "1 Serving Noodle, 30 Grams Sauce, 5 Whole Meatball"
+        "ingredients": [
+            "1 Serving Noodle",
+            "30 Grams Sauce", 
+            "5 Whole Meatball"
+        ]
     },
     {
         "name": "Pancakes",
-        "ingredients": "1 Cup Flour, 2 Tbsp Sugar, 1 Whole Egg, 1 Tsp BakingPowder"
+        "ingredients": [
+            "1 Cup Flour", 
+            "2 Tbsp Sugar", 
+            "1 Whole Egg", 
+            "1 Tsp BakingPowder"
+        ]
     },
     {
         "name": "Pepperoni Pizza",
-        "ingredients": "2 Cup Flour, 1 Cup Water, 70 Grams Sauce, 40 Grams Cheese, 30 Grams Pepperoni"
+        "ingredients": [
+            "2 Cup Flour", 
+            "1 Cup Water", 
+            "70 Grams Sauce", 
+            "40 Grams Cheese", 
+            "30 Grams Pepperoni"
+        ]
     }
 ]
